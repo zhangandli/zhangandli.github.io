@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-23T08:25:50.382Z</updated>
+  <updated>2024-05-23T13:46:04.091Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/05/23/markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2024/05/23/markdown%E8%AF%AD%E6%B3%95/</id>
+    <published>2024-05-23T12:42:12.032Z</published>
+    <updated>2024-05-23T13:46:04.091Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><hr><blockquote><p>引用的话</p></blockquote><hr><p>有序列表<br>1.张三<br>2.李四<br>3.王五</p><hr><p>无序列表</p><ul><li><p>无</p></li><li><p>顺序</p></li></ul><!----><ul><li><p>咧</p></li><li><p>表</p></li></ul><hr><p>任务列表</p><ul><li><p><input checked="" disabled="" type="checkbox"> 吃饭</p></li><li><p><input disabled="" type="checkbox"> 睡觉</p></li><li><p><input disabled="" type="checkbox"> 打游戏</p></li></ul><hr><p>代码块</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> main&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>数学公式</p><p>$$<br>\alpha \tag1<br>$$</p><hr><p>表格</p><table><thead><tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中</th></tr></thead><tbody><tr><td align="left">你</td><td align="right">我</td><td align="center">他</td></tr></tbody></table><hr><p>脚注<br>貂蝉<a href="%E4%BA%8C%E6%8A%80%E8%83%BD%E5%85%8D%E7%96%AB%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%A2%AB%E5%8A%A8%E6%8C%BA%E5%BC%BA%EF%BC%8C%E6%89%93%E4%B8%8D%E5%87%BA%E4%BC%A4%E5%AE%B3">^技能</a></p><hr><p>链接<br><a href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a></p><hr><p>引用链接</p><p><a href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a>、<a href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a>、<a href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a></p><p>更改id处就ok了</p><hr><p>链接到标题<br>点一下到<a href="#%E6%A0%87%E9%A2%981">标题1</a></p><hr><p>看看<img src="https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg" alt="照片" title="好看吧"></p><p><em>斜体</em></p><p><strong>加粗</strong></p><p><code>print()//行内代码</code></p><p>ssssssssssss</p><p>表情 :smile:</p><p>行内数学公式$ \tag1 $</p><p>下标H<del>2</del>O</p><p>上标2^2^&#x3D;4</p><p><mark>我是高亮<mark></p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;标题1&quot;&gt;&lt;a href=&quot;#标题1&quot; class=&quot;headerlink&quot; title=&quot;标题1&quot;&gt;&lt;/a&gt;标题1&lt;/h1&gt;&lt;h2 id=&quot;标题2&quot;&gt;&lt;a href=&quot;#标题2&quot; class=&quot;headerlink&quot; title=&quot;标题2&quot;&gt;&lt;/a&gt;标题2&lt;/h</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>初始博客尝试</title>
