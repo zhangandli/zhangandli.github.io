@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2024 | Hexo</title>
+  <title>个人博客搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2024/index.html">
+  <meta name="description" content="1、git 电脑中有已经安装好的git,并且环境配置ok; 2、node.js 下载node.js。 下载地址   node -v   npm -v   判断是否在电脑上安装完成 3、安装hexo   npm install -g hexo-cli   hexo -v （判断是否安装成功）   创建文件，在文件目录下  hexo init（文件必须为空）  4、使用hexo正式搭建博客  hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人博客搭建">
+<meta property="og:url" content="http://example.com/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、git 电脑中有已经安装好的git,并且环境配置ok; 2、node.js 下载node.js。 下载地址   node -v   npm -v   判断是否在电脑上安装完成 3、安装hexo   npm install -g hexo-cli   hexo -v （判断是否安装成功）   创建文件，在文件目录下  hexo init（文件必须为空）  4、使用hexo正式搭建博客  hexo">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-23T15:40:37.000Z">
+<meta property="article:modified_time" content="2024-05-23T16:31:39.259Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,130 +154,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-个人博客搭建" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      个人博客搭建
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+
+        
+        <a href="/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
   	<time datetime="2024-05-23T15:40:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">个人博客搭建</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1>1、git</h1>
+<p>电脑中有已经安装好的git,并且环境配置ok;</p>
+<h1>2、node.js</h1>
+<p>下载node.js。</p>
+<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/prebuilt-installer">下载地址</a></p>
+<ul>
+<li>
+<p>node -v</p>
+</li>
+<li>
+<p>npm -v</p>
+</li>
+</ul>
+<p>判断是否在电脑上安装完成</p>
+<h1>3、安装hexo</h1>
+<ul>
+<li>
+<p>npm install -g hexo-cli</p>
+</li>
+<li>
+<p>hexo -v （判断是否安装成功）</p>
+</li>
+</ul>
+<p>创建文件，在文件目录下</p>
+<ul>
+<li>hexo init（文件必须为空）</li>
+</ul>
+<h1>4、使用hexo正式搭建博客</h1>
+<ul>
+<li>hexo s（成功）</li>
+</ul>
+<p>软遇到需要清缓存的情况</p>
+<ul>
+<li>npm cache verify</li>
+</ul>
+<h1>5、部署到远端</h1>
+<ol>
+<li>
+<p>在github中创建仓库</p>
+</li>
+<li>
+<p>将仓库的ssh部署到…/_config.yml</p>
+</li>
+<li>
+<p>hexo cl</p>
+</li>
+<li>
+<p>hexo g</p>
+</li>
+<li>
+<p>hexo d</p>
+</li>
+</ol>
+<blockquote>
+<p>fatal: Could not read from remote repository</p>
+<p>第一次使用github，密钥没有在本地配置</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/W_317/article/details/106518894">解决方法</a></p>
+</blockquote>
+<blockquote>
+<p>Error: The landscape theme could not be found.&amp;&amp;GitHub创建个人主页报错404</p>
+<p>本地主题出现错误</p>
+<p>解决方法：更新或重安装的主题</p>
+</blockquote>
+<h1>6、marktext</h1>
+<p>一个免费的markdown编译器</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/chinayangxiaowei/marktext-chinese-language-pack/releases">marktext下载地址</a></p>
+<p><strong>end</strong></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/05/23/markdown%E8%AF%AD%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2024-05-23T13:52:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2024/05/23/markdown%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown语法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/05/23/markdown%E8%AF%AD%E6%B3%95/">markdown语法</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/05/23/%E5%88%9D%E5%A7%8B%E5%8D%9A%E5%AE%A2%E5%B0%9D%E8%AF%95/" class="archive-article-date">
-  	<time datetime="2024-05-23T08:24:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/05/23/%E5%88%9D%E5%A7%8B%E5%8D%9A%E5%AE%A2%E5%B0%9D%E8%AF%95/">初始博客尝试</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/05/23/hello-world/" class="archive-article-date">
-  	<time datetime="2024-05-23T08:15:16.150Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/05/23/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -296,8 +392,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
