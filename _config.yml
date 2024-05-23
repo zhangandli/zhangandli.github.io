@@ -103,3 +103,4 @@ theme: landscape
 deploy:
   type: 'git'
   repo: git@github.com:zhangandli/zhangandli.github.io.git
+  branch: main
