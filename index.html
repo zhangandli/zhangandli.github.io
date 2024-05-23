@@ -172,86 +172,108 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><hr>
+        <h1>标题1</h1>
+<h2 id="标题2">标题2</h2>
+<h3 id="标题3">标题3</h3>
+<hr>
 <blockquote>
 <p>引用的话</p>
 </blockquote>
 <hr>
-<p>有序列表<br>1.张三<br>2.李四<br>3.王五</p>
+<p>有序列表<br>
+1.张三<br>
+2.李四<br>
+3.王五</p>
 <hr>
 <p>无序列表</p>
 <ul>
-<li><p>无</p>
+<li>
+<p>无</p>
 </li>
-<li><p>顺序</p>
+<li>
+<p>顺序</p>
 </li>
 </ul>
 <!---->
-
 <ul>
-<li><p>咧</p>
+<li>
+<p>咧</p>
 </li>
-<li><p>表</p>
+<li>
+<p>表</p>
 </li>
 </ul>
 <hr>
 <p>任务列表</p>
 <ul>
-<li><p><input checked="" disabled="" type="checkbox"> 
-吃饭</p>
+<li>
+<p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">吃饭</label></p>
 </li>
-<li><p><input disabled="" type="checkbox"> 
-睡觉</p>
+<li>
+<p><input type="checkbox" id="checkbox1"><label for="checkbox1">睡觉</label></p>
 </li>
-<li><p><input disabled="" type="checkbox"> 
-打游戏</p>
+<li>
+<p><input type="checkbox" id="checkbox2"><label for="checkbox2">打游戏</label></p>
 </li>
 </ul>
 <hr>
 <p>代码块</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> main&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <hr>
 <p>数学公式</p>
-<p>$$<br>\alpha \tag1<br>$$</p>
+<p>$$<br>
+\alpha \tag1<br>
+$$</p>
 <hr>
 <p>表格</p>
 <table>
 <thead>
 <tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中</th>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">你</td>
-<td align="right">我</td>
-<td align="center">他</td>
+<tbody>
+<tr>
+<td style="text-align:left">你</td>
+<td style="text-align:right">我</td>
+<td style="text-align:center">他</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <hr>
-<p>脚注<br>貂蝉<a href="%E4%BA%8C%E6%8A%80%E8%83%BD%E5%85%8D%E7%96%AB%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%A2%AB%E5%8A%A8%E6%8C%BA%E5%BC%BA%EF%BC%8C%E6%89%93%E4%B8%8D%E5%87%BA%E4%BC%A4%E5%AE%B3">^技能</a></p>
+<p>脚注<br>
+貂蝉<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <hr>
-<p>链接<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a></p>
+<p>链接<br>
+<a target="_blank" rel="noopener" href="https://www.bilibili.com" title="学习娱乐好b站">b站</a></p>
 <hr>
 <p>引用链接</p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com/" title="学习娱乐好b站">b站</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com" title="学习娱乐好b站">b站</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com" title="学习娱乐好b站">b站</a>、<a target="_blank" rel="noopener" href="https://www.bilibili.com" title="学习娱乐好b站">b站</a></p>
 <p>更改id处就ok了</p>
 <hr>
-<p>链接到标题<br>点一下到<a href="#%E6%A0%87%E9%A2%981">标题1</a></p>
+<p>链接到标题<br>
+点一下到<a href="#%E6%A0%87%E9%A2%981">标题1</a></p>
 <hr>
 <p>看看<img src="https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg" alt="照片" title="好看吧"></p>
 <p><em>斜体</em></p>
 <p><strong>加粗</strong></p>
 <p><code>print()//行内代码</code></p>
 <p>ssssssssssss</p>
-<p>表情 :smile:</p>
-<p>行内数学公式$ \tag1 $</p>
-<p>下标H<del>2</del>O</p>
-<p>上标2^2^&#x3D;4</p>
-<p><mark>我是高亮<mark></p>
+<p>表情 😄</p>
+<p>行内数学公式$\tag1$</p>
+<p>下标H<s>2</s>O</p>
+<p>上标2<sup>2</sup>=4</p>
+<p>我是高亮</p>
 <hr>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>二技能免疫伤害，被动挺强，打不出伤害 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
       
 
@@ -314,10 +336,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="是什么样的"><a href="#是什么样的" class="headerlink" title="是什么样的"></a>是什么样的</h2><hr>
+        <h2 id="是什么样的">是什么样的</h2>
+<hr>
 <p>##拭目以待</p>
 <hr>
-<h2 id="markdown格式还要学习"><a href="#markdown格式还要学习" class="headerlink" title="markdown格式还要学习"></a>markdown格式还要学习</h2>
+<h2 id="markdown格式还要学习">markdown格式还要学习</h2>
+
       
 
       
@@ -380,17 +404,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
