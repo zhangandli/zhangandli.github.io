@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2024/06/02/%E4%BB%80%E4%B9%88%E6%98%AFJPA/</loc>
+    
+    <lastmod>2024-06-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2024/06/02/SpringData/</loc>
     
     <lastmod>2024-06-02</lastmod>
@@ -49,7 +58,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2024-06-02</lastmod>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,7 +66,14 @@
   
   <url>
     <loc>http://example.com/tags/SpringData-JPA%E9%93%BA%E5%9E%AB/</loc>
-    <lastmod>2024-06-02</lastmod>
+    <lastmod>2024-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Spring-Data-JPA/</loc>
+    <lastmod>2024-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

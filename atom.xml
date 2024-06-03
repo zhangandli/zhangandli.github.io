@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-02T15:07:31.411Z</updated>
+  <updated>2024-06-03T04:26:48.471Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么是JPA</title>
+    <link href="http://example.com/2024/06/02/%E4%BB%80%E4%B9%88%E6%98%AFJPA/"/>
+    <id>http://example.com/2024/06/02/%E4%BB%80%E4%B9%88%E6%98%AFJPA/</id>
+    <published>2024-06-02T15:10:27.000Z</published>
+    <updated>2024-06-03T04:26:48.471Z</updated>
+    
+    <content type="html"><![CDATA[<h1>JPA的介绍</h1><p>JPA全称Java Persistence API（2019年重新命名为 Jakarta Persistence API ），是Sun官方提出的一种ORM规范。</p><p><em><strong>O:Object R: Relational M:mapping</strong></em></p><p><strong>作用</strong></p><p>1.简化持久化操作的开发工作：让开发者从繁琐的 JDBC 和 SQL 代码中解脱出来，直接面向对象持久化操作。</p><p>2.Sun希望持久化技术能够统一，实现天下归一：如果你是基于JPA进行持久化你可以随意切换数据库。</p><p>该规范为我们提供了：</p><p>1）<strong>ORM映射元数据</strong>：JPA支持XML和注解两种元数据的形式，元数据描述对象和表之间的映射关系，框架据此将实体对象持久化到数据库表中；</p><p>如：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entity</span> 、 <span class="meta">@Table</span> 、<span class="meta">@Id</span> 与 <span class="meta">@Column</span>等注解。</span><br></pre></td></tr></table></figure><p>2）<strong>JPA 的API</strong>：用来操作实体对象，执行CRUD操作，框架在后台替我们完成所有的事情，开发者从繁琐的JDBC和SQL代码中解脱出来。</p><p>如：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">entityManager.merge(T t)；</span><br></pre></td></tr></table></figure><p>3）<strong>JPQL查询语言</strong>：通过面向对象而非面向数据库的查询语言查询数据，避免程序的SQL语句紧密耦合。</p><p>如：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Student s <span class="keyword">where</span> s.name <span class="operator">=</span> ?</span><br></pre></td></tr></table></figure><p><em>So: JPA仅仅是一种规范，也就是说JPA仅仅定义了一些接口，而接口是需要实现才能工作的</em>。</p><h1>JPA与JDBC的关系</h1><h2 id="相同处：">相同处：</h2><p>1.都跟数据库操作有关，JPA 是JDBC 的升华，升级版。</p><p>2.JDBC和JPA都是一组规范接口。（<em>JDBC与各种sql相接</em> ）</p><p>3.都是由SUN官方推出的。</p><h2 id="不同处：">不同处：</h2><p>1.JDBC是由各个关系型数据库实现的，JPA 是由<strong>ORM框架</strong>实现</p><p>2.JDBC 使用SQL语句和数据库通信。JPA用面向对象方式，通过ORM框架来生成SQL，进行操作。</p><p>3.JPA在JDBC之上的， JPA也要依赖JDBC才能操作数据库。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;JPA的介绍&lt;/h1&gt;
+&lt;p&gt;JPA全称Java Persistence API（2019年重新命名为 Jakarta Persistence API ），是Sun官方提出的一种ORM规范。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;O:Object R: Relationa</summary>
+      
+    
+    
+    
+    
+    <category term="Spring Data JPA" scheme="http://example.com/tags/Spring-Data-JPA/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringData</title>
