@@ -152,6 +152,187 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Z04-jpa的对象4种状态" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/06/04/Z04-jpa%E7%9A%84%E5%AF%B9%E8%B1%A14%E7%A7%8D%E7%8A%B6%E6%80%81/">jpa的对象4种状态和缓存</a>
+    </h1>
+  
+
+        
+        <a href="/2024/06/04/Z04-jpa%E7%9A%84%E5%AF%B9%E8%B1%A14%E7%A7%8D%E7%8A%B6%E6%80%81/" class="archive-article-date">
+  	<time datetime="2024-06-04T08:51:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1>状态</h1>
+<ul>
+<li>
+<p>临时状态：刚创建出来，∙没有与entityManager发生关系，没有被持久化，不处于entityManager中的对象</p>
+</li>
+<li>
+<p>持久状态：∙与entityManager发生关系，已经被持久化，可以把持久化状态当做实实在在的数据库记录。</p>
+</li>
+<li>
+<p>删除状态：执行remove方法，事物提交之前</p>
+</li>
+<li>
+<p>游离状态：游离状态就是提交到数据库后，事务commit后实体的状态，因为事务已经提交了，此时实体的属性任你如何改变，也不会同步到数据库</p>
+</li>
+</ul>
+<p><img src="C:%5CUsers%5CDELL%5CDesktop%5CBoKe%5Csource%5Cimage%5Cjpa_4status.png" alt=" "></p>
+<ul>
+<li>
+<p><strong>public void persist(Object entity)</strong></p>
+<ul>
+<li>persist方法可以将实例转换为managed(托管)状态。在调用flush()方法或提交事物后，实例将会被插入到数据库中。</li>
+</ul>
+</li>
+</ul>
+<p>对不同状态下的实例A，persist会产生以下操作:</p>
+<ol>
+<li>
+<p>如果A是一个new状态的实体，它将会转为managed状态；</p>
+</li>
+<li>
+<p>如果A是一个managed状态的实体，它的状态不会发生任何改变。但是系统仍会在数据库执行INSERT操作；</p>
+</li>
+<li>
+<p>如果A是一个removed(删除)状态的实体，它将会转换为受控状态；</p>
+</li>
+<li>
+<p>如果A是一个detached(分离)状态的实体，该方法会抛出IllegalArgumentException异常，具体异常根据不同的JPA实现有关。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>public void merge(Object entity)</strong></p>
+<ul>
+<li>merge方法的主要作用是将用户对一个detached(游离)状态实体的修改进行归档，归档后将产生一个新的managed状态对象。</li>
+</ul>
+</li>
+</ul>
+<p>对不同状态下的实例A，merge会产生以下操作:</p>
+<ol>
+<li>
+<p>如果A是一个detached状态的实体，该方法会将A的修改提交到数据库，并返回一个新的managed状态的实例A2；</p>
+</li>
+<li>
+<p>如果A是一个new状态的实体，该方法会产生一个根据A产生的managed状态实体A2;</p>
+</li>
+<li>
+<p>如果A是一个managed状态的实体，它的状态不会发生任何改变。但是系统仍会在数据库执行UPDATE操作；</p>
+</li>
+<li>
+<p>如果A是一个removed状态的实体，该方法会抛出IllegalArgumentException异常。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>public void refresh(Object entity)</strong></p>
+<ul>
+<li>refresh方法可以保证当前的实例与数据库中的实例的内容一致。</li>
+</ul>
+</li>
+</ul>
+<p>对不同状态下的实例A，refresh会产生以下操作:</p>
+<ol>
+<li>
+<p>如果A是一个new状态的实例，不会发生任何操作，但有可能会抛出异常，具体情况根据不同JPA实现有关；</p>
+</li>
+<li>
+<p>如果A是一个managed状态的实例，它的属性将会和数据库中的数据同步；</p>
+</li>
+<li>
+<p>如果A是一个removed状态的实例，该方法将会抛出异常: Entity not managed</p>
+</li>
+<li>
+<p>如果A是一个detached状态的实体，该方法将会抛出异常。</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><strong>public void remove(Object entity)</strong></p>
+<ul>
+<li>remove方法可以将实体转换为removed状态，并且在调用flush()方法或提交事物后删除数据库中的数据。</li>
+</ul>
+</li>
+</ul>
+<p>对不同状态下的实例A，remove会产生以下操作:</p>
+<ol>
+<li>
+<p>如果A是一个new状态的实例，A的状态不会发生任何改变，但系统仍会在数据库中执行DELETE语句；</p>
+</li>
+<li>
+<p>如果A是一个managed状态的实例，它的状态会转换为removed；</p>
+</li>
+<li>
+<p>如果A是一个removed状态的实例，不会发生任何操作;</p>
+</li>
+<li>
+<p>如果A是一个detached状态的实体，该方法将会抛出异常。</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Spring Data JPA</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/06/04/Z04-jpa%E7%9A%84%E5%AF%B9%E8%B1%A14%E7%A7%8D%E7%8A%B6%E6%80%81/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Hibernate与JPA" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
