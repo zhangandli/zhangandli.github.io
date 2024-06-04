@@ -1,3 +1,4 @@
+http://example.com/2024/06/03/Hibernate%E4%B8%8EJPA/
 http://example.com/2024/06/02/%E4%BB%80%E4%B9%88%E6%98%AFJPA/
 http://example.com/2024/06/02/SpringData/
 http://example.com/2024/05/23/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/
